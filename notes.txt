@@ -10,3 +10,8 @@ Variables:
 
 Conditional and Booleans:
 - <?=  ?> //shorthand for echo
+
+Arrays:
+- <?php foreach () : ?>
+   
+  <?php endforeach; ?>

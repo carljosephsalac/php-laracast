@@ -33,6 +33,21 @@
     <?= $message ?>
   </h1>
 
+  <!-- Arrays -->
+  <h1>Books</h1>
+  <?php
+    $books = [
+      'book1',
+      'book2',
+      'book3'
+    ];
+  ?>
+  <ul>
+    <?php foreach ($books as $book) : ?>
+      <li><?= $book ?></li>
+    <?php endforeach; ?>
+  </ul>
+
 </body>
 
 </html>
