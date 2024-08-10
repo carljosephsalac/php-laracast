@@ -9,9 +9,12 @@ Variables:
 - template literals using double quotes " " , same as ` ` in JavaScript
 
 Conditional and Booleans:
-- <?=  ?> //shorthand for echo
+- <?=  ?> // shorthand for echo
 
 Arrays:
 - <?php foreach () : ?>
    
   <?php endforeach; ?>
+
+Functions and Filter:
+- !empty($variable) // it checks whether the variable is both set and not empty
