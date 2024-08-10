@@ -3,3 +3,7 @@ Your first PHP tag:
 - php -h
 - php -S localhost:8888
 - <?php?>
+
+Variables:
+- echo "$greeting PHP";
+- template literals using double quotes " " , same as ` ` in JavaScript
