@@ -8,13 +8,31 @@
 </head>
 
 <body>
+
+  <!-- Variables -->
   <h1>
-    <?php
+    <?php      
       $greeting = 'Hello';
 
       echo "$greeting PHP";
     ?>
   </h1>
+
+  <!-- Conditional and Booleans -->
+  <?php
+      $book = 'Dark Matter';
+      $read = true;
+
+      if ($read) {
+        $message = "You have read $book";
+      } else {
+        $message = "You have not read $book";
+      }
+  ?>
+  <h1>
+    <?= $message ?>
+  </h1>
+
 </body>
 
 </html>
