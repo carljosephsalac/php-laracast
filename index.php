@@ -14,7 +14,7 @@
     <?php      
       $greeting = 'Hello';
 
-      echo "$greeting PHP";
+      echo "$greeting PHP (Variables)";
     ?>
   </h1>
 
@@ -24,9 +24,9 @@
       $read = true;
 
       if ($read) {
-        $message = "You have read $book";
+        $message = "You have read $book (Conditional and Booleans)";
       } else {
-        $message = "You have not read $book";
+        $message = "You have not read $book (Conditional and Booleans)";
       }
   ?>
   <h1>
@@ -34,20 +34,51 @@
   </h1>
 
   <!-- Arrays -->
-  <h1>Books</h1>
+  <h1>Books (Arrays)</h1>
   <?php
     $books = [
-      'book1',
-      'book2',
-      'book3'
+      'Ang Alamat ng Langgam',
+      'Juan Tamad',
+      'Matsing at Pagong'
     ];
   ?>
   <ul>
     <?php foreach ($books as $book) : ?>
-      <li><?= $book ?></li>
+    <li><?= $book ?></li>
     <?php endforeach; ?>
   </ul>
 
+  <!-- Associative Arrays -->
+  <h1>Books (Associative Arrays)</h1>
+  <?php
+    $books = [
+      [
+        'name' => 'Ang Alamat ng Langgam',
+        'author' => 'Pedro Pen Duco',
+        'url' => 'https://example.com'
+      ],
+      [
+        'name' => 'Juan Tamad',
+        'author' => 'Carlo J. Caparas',
+        'url' => 'https://example.com'
+      ],
+      [
+        'name' => 'Matsing at Pagong',
+        'author' => 'Coco Maritn',
+        'url' => 'https://example.com'
+      ],
+    ];
+  ?>
+  <ul>
+    <?php foreach ($books as $book) : ?>
+    <li>
+      <?= $book['name'] ?> <br>
+    </li>
+    <i>
+      Author : <?= $book['author'] ?>
+    </i>
+    <?php endforeach; ?>
+  </ul>    
 </body>
 
 </html>
