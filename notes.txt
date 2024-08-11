@@ -22,3 +22,11 @@ Functions and Filter:
 DAY 2
 Lambda Functions:
 - array_filter();
+
+Separate Logic From the Template:
+- <?php
+  // code
+
+  require 'index.view.php';
+- Expected type 'iterable|object'. Found 'unset'.intelephense
+  file > preference > setting > intelephense.diagnostics.enable > uncheck
