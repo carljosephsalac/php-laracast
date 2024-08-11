@@ -18,3 +18,7 @@ Arrays:
 
 Functions and Filter:
 - !empty($variable) // it checks whether the variable is both set and not empty
+
+DAY 2
+Lambda Functions:
+- array_filter();

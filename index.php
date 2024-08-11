@@ -7,7 +7,7 @@
     <title>PHP Laracast</title>
 </head>
 
-<body>
+<body style="padding-bottom: 50px;">
 
     <!-- Variables -->
     <h1>
@@ -112,7 +112,7 @@
                 }
             }
                        
-            return null;      
+            return $filteredBooks;      
         }
     ?>
     
@@ -132,6 +132,50 @@
         <?php endif; ?>        
     </ul>
 
+    <!-- Lambda Functions -->
+    <h1>Books (Lambda Functions)</h1>
+    <?php
+        $books = [
+            [
+                'name' => 'Ang Alamat ng Langgam',
+                'author' => 'Pedro Pen Duco',
+                'url' => 'https://example.com'
+            ],
+            [
+                'name' => 'Juan Tamad',
+                'author' => 'Carlo J. Caparas',
+                'url' => 'https://example.com'
+            ],
+            [
+                'name' => 'Batang Quiapo',
+                'author' => 'Coco Martin',
+                'url' => 'https://example.com'
+            ],
+            [
+                'name' => 'Ang Probinsyano',
+                'author' => 'Coco Martin',
+                'url' => 'https://example.com'
+            ],
+        ];
+
+        $filteredBooks = array_filter($books, function($book) {
+            return $book['author'] === 'Coco Martin';
+        });
+    ?>   
+
+    <ul>
+        <?php if (!empty($filteredBooks)) : ?>
+            <?php foreach ($filteredBooks as $book) : ?>
+                <li>
+                    <a href="<?= $book['url'] ?>">
+                        <?= $book['name'] ?> - By <?= $book['author'] ?>
+                    </a>     
+                </li>     
+            <?php endforeach; ?>
+        <?php else : ?>
+            <li>No books found</li>
+        <?php endif; ?>        
+    </ul>
 </body>
 
 </html>
