@@ -30,3 +30,7 @@ Separate Logic From the Template:
   require 'index.view.php';
 - Expected type 'iterable|object'. Found 'unset'.intelephense
   file > preference > setting > intelephense.diagnostics.enable > uncheck
+
+Make a PHP Router
+- parse_url();
+- array_key_exists();
