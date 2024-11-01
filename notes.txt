@@ -34,3 +34,7 @@ Separate Logic From the Template:
 Make a PHP Router
 - parse_url();
 - array_key_exists();
+
+DAY 3
+Page Links:
+- href="/filename.php"
