@@ -61,4 +61,4 @@ $filteredBooksLambda = array_filter($booksAssociativeArray, function($book) {
     return $book['author'] === 'Coco Martin';
 });
 
-require 'basic.view.php';
+require 'views/basic.view.php';

@@ -38,3 +38,10 @@ Make a PHP Router
 DAY 3
 Page Links:
 - href="/filename.php"
+
+DAY 4
+PHP Partials:
+- to remove duplication
+- <?php require 'filepath'?>
+- create variable in controller to make the content dynamic in partials or views
+- ex. in controller $heading = 'About Us'; in partials or views <?= $heading ?>
