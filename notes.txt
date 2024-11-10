@@ -45,3 +45,14 @@ PHP Partials:
 - <?php require 'filepath'?>
 - create variable in controller to make the content dynamic in partials or views
 - ex. in controller $heading = 'About Us'; in partials or views <?= $heading ?>
+
+Superglobals and Current Page Stylings:
+- $_SERVER
+- $_SERVER['REQUEST_URI']
+- var_dump()
+- var_dump($_SERVER['REQUEST_URI'])
+- using functiont to determine the current url example:
+  function urlIs($value) {
+    return $_SERVER['REQUEST_URI'] === $value;
+  }
+- separate functions in php file and just require it in controller ex. require 'functions.php';
