@@ -56,3 +56,9 @@ Superglobals and Current Page Stylings:
     return $_SERVER['REQUEST_URI'] === $value;
   }
 - separate functions in php file and just require it in controller ex. require 'functions.php';
+
+DAY 5
+Make a PHP Router:
+- parse_url(), separates path (or url/route) and query string in array index
+- array_key_exists($key, $array), checks if the given key exist in given array
+- route.php, all codes related to routing
