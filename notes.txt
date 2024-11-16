@@ -31,10 +31,6 @@ Separate Logic From the Template:
 - Expected type 'iterable|object'. Found 'unset'.intelephense
   file > preference > setting > intelephense.diagnostics.enable > uncheck
 
-Make a PHP Router
-- parse_url();
-- array_key_exists();
-
 DAY 3
 Page Links:
 - href="/filename.php"
@@ -59,6 +55,13 @@ Superglobals and Current Page Stylings:
 
 DAY 5
 Make a PHP Router:
+- index.php, entry point of the application
 - parse_url(), separates path (or url/route) and query string in array index
 - array_key_exists($key, $array), checks if the given key exist in given array
 - route.php, all codes related to routing
+
+DAY 6
+PDO First Steps:
+- prepared statements to prevent SQL injection.
+- PDO::FETCH_ASSOC, remove duplication when fetching data in db
+- PDO supports many databases while MySQLi is only specific to MySQL
