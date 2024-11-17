@@ -65,3 +65,8 @@ PDO First Steps:
 - prepared statements to prevent SQL injection.
 - PDO::FETCH_ASSOC, remove duplication when fetching data in db
 - PDO supports many databases while MySQLi is only specific to MySQL
+
+DAY 7
+Extract a PHP Database Class:
+- Placing the code inside the __construct method of the Database class ensures that the database connection is established automatically whenever an instance of the class is created
+- Database.php, the first letter is capital if the php file only contains class
