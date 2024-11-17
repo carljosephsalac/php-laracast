@@ -73,6 +73,16 @@ Extract a PHP Database Class:
 
 Environments and Configuration Flexibility:
 - http_build_query(), converts array into a query string-like format
-- PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC, his sets the default fetch mode for the PDO connection to PDO::FETCH_ASSOC
+- PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC, this sets the default fetch mode for the PDO connection to PDO::FETCH_ASSOC
 - can also use return in a file then use require('filename.php') to get the return value
 - config.php, serves as a centralized place to store configuration settings for an application
+
+SQL Injection Vulnerabilities Explained:
+- sample sql injection that drops a table
+  http://localhost:8888/?id=4; drop table sample;
+  // Vulnerable sql query
+  $id = $_GET['id'];
+  $query = "SELECT * FROM posts WHERE id = $id";
+  $post = $db->query($query)->fetch();
+- use prepared statement with bound parameters/placeholders to avoid sql injection
+- never accept user input and inline it as part of the database query

@@ -8,11 +8,14 @@ $config = require('config.php');
 
 $db = new Database($config['database']);
 
-$posts = $db->query('SELECT * FROM posts')->fetchAll();
+$id = $_GET['id'];
 
+$query1 = "SELECT * FROM posts WHERE NOT id = :id"; // named placeholders (:id)
+$posts = $db->query($query1, [':id' => $id])->fetchAll();
 foreach ($posts as $post) {
     echo "<li>{$post['title']}</li>";
 }
 
-$post = $db->query('SELECT * FROM posts WHERE id = 4')->fetch();
+$query2 = "SELECT * FROM posts WHERE id = ?"; // positional placeholders (?)
+$post = $db->query($query2, [$id])->fetch();
 dd($post['title']);
