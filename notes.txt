@@ -86,3 +86,10 @@ SQL Injection Vulnerabilities Explained:
   $post = $db->query($query)->fetch();
 - use prepared statement with bound parameters/placeholders to avoid sql injection
 - never accept user input and inline it as part of the database query
+
+DAY 7
+Introduction to Authorization:
+- $note['user_id'] is string(1) "1" even if the data type of it in databse is int, because by default many database drivers (e.g., PDO in PHP) return all column values as strings, regardless of their data types in the database.
+- "Magic numbers" like the 403 in abort(403, 'Forbidden'); are hard-coded numeric values in code that have no clear meaning
+- Using a named constant like abort(Response::FORBIDDEN, 'Forbidden') instead of a raw number eliminates confusion and follows good programming practices
+- Using Response::FORBIDDEN is a best practice that makes your codebase cleaner, more maintainable, and easier to understand for yourself and others. It avoids the pitfalls of "magic numbers" and provides meaningful context to otherwise abstract values
