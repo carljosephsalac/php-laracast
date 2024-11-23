@@ -17,3 +17,9 @@ function abort($code = Response::NOT_FOUND, $message = 'Not Found') {
     echo '<a href="/">Go to Home</a>';
     die();
 }
+
+function authorize($condition, $status = Response::FORBIDDEN) {
+    if (!$condition) {
+        abort($status, 'Forbidden');
+    }
+}
