@@ -22,6 +22,9 @@
           </a>
         </li>
       <?php endforeach; ?>
+      <a href="/notes/create" class="mt-6 inline-block text-blue-500 hover:underlined">
+        Create Notes
+      </a>
     </div>
   </main>
 </div>

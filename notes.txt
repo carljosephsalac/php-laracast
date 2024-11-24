@@ -99,3 +99,7 @@ Programming is Rewriting:
 - return $this; // return the object or instance in able to use chain methods
 - If you want to reuse a variable inside a method to another method in a class, declare the variable as a class property ex. public $statement; then use it in other class method ex. $this->statement
 - Provides intuitive methods for common data retrieval patterns, reducing boilerplate code for consumers of the Database class
+
+DAY 9
+Intro to Forms and Request Methods:
+- $_SERVER["REQUEST_METHOD"], get the request method ex. GET, POST
