@@ -103,3 +103,10 @@ Programming is Rewriting:
 DAY 9
 Intro to Forms and Request Methods:
 - $_SERVER["REQUEST_METHOD"], get the request method ex. GET, POST
+
+DAY 10
+Always Escape Untrusted Input:
+- sanitation
+- htmlspecialchars(), Convert all applicable characters to HTML entities
+- from this, <script>alert('dfsdfd')</script>
+- to this, &lt;script&gt;alert('dfsdfd')&lt;/script&gt;
