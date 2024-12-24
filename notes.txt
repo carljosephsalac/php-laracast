@@ -110,3 +110,10 @@ Always Escape Untrusted Input:
 - htmlspecialchars(), Convert all applicable characters to HTML entities
 - from this, <script>alert('dfsdfd')</script>
 - to this, &lt;script&gt;alert('dfsdfd')&lt;/script&gt;
+
+DAY 11
+Intro to Forms and Request Methods:
+- strlen()
+- !empty() checks if a variable is not empty (i.e., it is not 0, false, null, "", [], or an unset variable)
+- isset() checks if a variable is set/declared and not null
+- ?? (null coalescing operator) provides a default value if the variable is not set or is null
