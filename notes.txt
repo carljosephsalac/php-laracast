@@ -117,3 +117,8 @@ Intro to Forms and Request Methods:
 - !empty() checks if a variable is not empty (i.e., it is not 0, false, null, "", [], or an unset variable)
 - isset() checks if a variable is set/declared and not null
 - ?? (null coalescing operator) provides a default value if the variable is not set or is null
+
+Extract a Simple Validator Class:
+- trim() removes spaces
+- a pure function is a function that is not dependent upon state or values from the outside of the function
+- programming is often described as rewriting because the process of developing software involves continuous iteration and improvement
