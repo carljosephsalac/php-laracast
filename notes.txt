@@ -122,3 +122,7 @@ Extract a Simple Validator Class:
 - trim() removes spaces
 - a pure function is a function that is not dependent upon state or values from the outside of the function
 - programming is often described as rewriting because the process of developing software involves continuous iteration and improvement
+
+DAY 12
+Resourceful Naming Conventions:
+- __DIR__ is a magic constant that represents the directory of the file in which it is used. It provides an absolute path to the directory where the script is located.
