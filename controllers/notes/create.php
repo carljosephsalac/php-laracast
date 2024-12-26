@@ -19,6 +19,9 @@ if ($_SERVER["REQUEST_METHOD"] === 'POST') {
             'body' => $_POST['body'],
             'user_id' => 1
         ]);
+
+        header('location: /notes');
+        exit();
     }
 }
 

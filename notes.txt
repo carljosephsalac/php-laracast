@@ -146,3 +146,7 @@ Namespacing: What, Why, How?
 - \ClassName, starts at the root and look for the class
 - ClassName, start within the current namespace and then look for the class
 - when working within a namespace, you must either fully qualify class names (\ClassName) or import them explicitly (use ClassName;)
+
+Handle Multiple Request Methods From a Controller Action?
+- header('location: /notes'); this sends an HTTP header to the browser instructing it to navigate to the specified URL
+- exit(); ensures no further code is executed after the redirect
