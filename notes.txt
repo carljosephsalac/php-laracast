@@ -135,3 +135,14 @@ PHP Autoloading and Extractions:
 - extract(), convert the associative array into a variable
 - spl_autoload_register(), is used to automatically load class files when a class is instantiated. It eliminates the need to manually include or require files for each class.
 - autoloading in PHP is a mechanism that allows you to automatically load classes when they are needed, without requiring explicit require or include statements for each class.
+
+DAY 13
+Namespacing: What, Why, How?
+- namespacing is a powerful feature in PHP that helps avoid name conflicts, organizes code logically
+- inside a class put namespace Name; at the top
+- when using that class put use Name\ClassName at the top;
+- or new Name\ClassName when instantiating
+- str_replace($search, $replace, $subject);
+- \ClassName, starts at the root and look for the class
+- ClassName, start within the current namespace and then look for the class
+- when working within a namespace, you must either fully qualify class names (\ClassName) or import them explicitly (use ClassName;)

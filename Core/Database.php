@@ -1,5 +1,9 @@
 <?php
 
+namespace Core;
+
+use PDO;
+
 class Database {
     public $connection;
     public $statement; // declared as a class property in able to use in other method
