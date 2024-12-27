@@ -150,3 +150,7 @@ Namespacing: What, Why, How?
 Handle Multiple Request Methods From a Controller Action?
 - header('location: /notes'); this sends an HTTP header to the browser instructing it to navigate to the specified URL
 - exit(); ensures no further code is executed after the redirect
+
+DAY 14
+ Build a Better Router:
+ - <input type="hidden" name="_method" value="DELETE"> same as @method('DELETE') in laravel blade
