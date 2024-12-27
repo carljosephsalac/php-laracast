@@ -154,3 +154,6 @@ Handle Multiple Request Methods From a Controller Action?
 DAY 14
  Build a Better Router:
  - <input type="hidden" name="_method" value="DELETE"> same as @method('DELETE') in laravel blade
+
+ One Request, One Controller:
+ 
