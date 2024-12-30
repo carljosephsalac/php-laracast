@@ -180,3 +180,10 @@ PHP Sessions 101:
 - to see where the session data being saved:
   -> type in terminal php --info > find session.save_path > go to that directory > find the file name sess_cookieid > view the file to see the session data
 - Deleting cookies removes the PHPSESSID cookie, which holds the session ID. Without this ID, the server cannot link the client to its stored session data, making the session inaccessible even if it still exists on the server
+
+Register a New User:
+- create route > create controller > create view
+- $_SESSION['key'] ?? false
+  -> if you want to check for both the existence of $_SESSION['key'] and ensure it has a truthy value
+- isset($_SESSION['key'])
+  -> if you only care about whether $_SESSION['key'] exists and is not null
