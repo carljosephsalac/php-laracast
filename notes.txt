@@ -187,3 +187,7 @@ Register a New User:
   -> if you want to check for both the existence of $_SESSION['key'] and ensure it has a truthy value
 - isset($_SESSION['key'])
   -> if you only care about whether $_SESSION['key'] exists and is not null
+
+Introduction to Middleware:
+- find the last value of array, count($array) - 1; or array_key_last($array);
+- (new Class)->method(); instantiates the class and immediately calls the method on the instance, without storing it in a variable
