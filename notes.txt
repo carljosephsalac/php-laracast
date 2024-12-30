@@ -161,3 +161,22 @@ DAY 15
 Updating With PATCH Requests:
 - PATCH for partial updates where only specific fields need modification
 - PUT (commonly referred to as "UPDATE") when you need to replace the entire resource
+
+DAY 16
+PHP Sessions 101:
+- session represents a period of interaction between a user and a system
+- session_start() purpose is to make the $_SESSION superglobal available for storing and retrieving session data.
+- session data is temporaray
+- session storage in browser is part of JavaScript API not PHP
+- Session Identification:
+  -> when session_start() is called in PHP, a unique session ID is generated stored on the client side in a cookie named PHPSESSID
+- Maintaining the Session:
+  -> The session data is stored on the server (in files or another storage backend)
+  -> The session ID (stored in the PHPSESSID cookie) allows the server to retrieve the correct session data for the client during subsequent requests
+- Session Continuity:
+  -> For every request, the browser sends the PHPSESSID cookie back to the server
+  -> The server uses this ID to fetch the associated session data
+- $_SESSION['key'] = 'value'; to save session data
+- to see where the session data being saved:
+  -> type in terminal php --info > find session.save_path > go to that directory > find the file name sess_cookieid > view the file to see the session data
+- Deleting cookies removes the PHPSESSID cookie, which holds the session ID. Without this ID, the server cannot link the client to its stored session data, making the session inaccessible even if it still exists on the server

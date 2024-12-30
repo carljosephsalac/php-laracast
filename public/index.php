@@ -1,5 +1,10 @@
 <?php
 
+session_start();
+
+$_SESSION['name'] = 'Carl';
+$_SESSION['age'] = 23;
+
 const BASE_PATH = __DIR__ . '/../';
 
 require BASE_PATH . 'Core/functions.php';
