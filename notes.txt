@@ -191,3 +191,7 @@ Register a New User:
 Introduction to Middleware:
 - find the last value of array, count($array) - 1; or array_key_last($array);
 - (new Class)->method(); instantiates the class and immediately calls the method on the instance, without storing it in a variable
+
+DAY 17
+Manage Passwords Like This For The Remainder of Your Career:
+- never store password in clear text
