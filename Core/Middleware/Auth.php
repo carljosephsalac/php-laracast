@@ -15,7 +15,7 @@ class Auth
     public function handle()
     {
         if (!$_SESSION['user'] ?? false) {
-            header('location: /register');
+            header('location: /');
             exit();
         }
     }

@@ -195,3 +195,8 @@ Introduction to Middleware:
 DAY 17
 Manage Passwords Like This For The Remainder of Your Career:
 - never store password in clear text
+
+DAY 18
+Log In and Log Outs:
+- the value of PHPSESSID cookie is the session id
+- session_regenerate_id(true); generates a new session ID and deletes the old session data file on the server when the true parameter is passed
