@@ -211,5 +211,8 @@ Extract a Form Validation Object:
   use Core\Validator;
 
   class LoginForm {
-    
+
   }
+
+Extract an Authenticator Class:
+- use inline instantiation if you only used the object once
