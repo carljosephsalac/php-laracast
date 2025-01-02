@@ -2,6 +2,7 @@
 
 namespace Core;
 
+use Core\Session;
 use Core\Database;
 
 class Authenticator
@@ -30,7 +31,8 @@ class Authenticator
         return false;
     }
 
-    public function login($user) {
+    public function login($user)
+    {
         $_SESSION['user'] = [
             'email' => $user['email'],
         ];
@@ -38,11 +40,8 @@ class Authenticator
         session_regenerate_id(true);
     }
     
-    public function logout() {
-        $_SESSION = [];
-        session_destroy();
-    
-        $params = session_get_cookie_params();
-        setcookie('PHPSESSID', '', time() - 3600, $params['path'], $params['domain'], $params['secure'], $params['httponly']);
+    public function logout()
+    {
+        Session::destroy();
     }
 }
