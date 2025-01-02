@@ -1,5 +1,6 @@
 <?php
 
+use Http\Forms\LoginForm;
 use Core\Database;
 use Core\Validator;
 
@@ -11,18 +12,12 @@ $db = new Database($config['database']);
 $email = $_POST['email'];
 $password = $_POST['password'];
 
-$errors = [];
-if (!Validator::string($email, 1, 30)) {
-    $errors['email'] = 'Email is required and no more than 20 characters';
-}
-if (!Validator::string($password)) {
-    $errors['password'] = 'Please provide a valid password';
-}
+$form = new LoginForm();
 
-if (!empty($errors)) {
+if (!$form->validate($email, $password)) {
     return view('session/create.view.php', [
         'heading' => 'Login',
-        'errors' => $errors
+        'errors' => $form->errors(),
     ]);
 }
 
