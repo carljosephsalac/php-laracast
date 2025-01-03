@@ -82,4 +82,9 @@ class Router
         echo '<a href="/">Go to Home</a>';
         die();
     }
+
+    public function previousUrl()
+    {
+        return $_SERVER['HTTP_REFERER'];
+    }
 }

@@ -225,3 +225,6 @@ The PRG Pattern (and Session Flashing):
 DAY 20
 Flash Old Form Data to the Session:
 - use $default = '' in function param instead of returning hardcoded ?? '' for customization
+
+Automatically Redirect Back Upon Failed Validations:
+- $_SERVER['HTTP_REFERER']; previous url
