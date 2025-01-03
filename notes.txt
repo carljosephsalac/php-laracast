@@ -221,3 +221,7 @@ The PRG Pattern (and Session Flashing):
 - Post/Redirect/Get
 - Prevents Form Re-Submission
 - Avoid browser alert warnings
+
+DAY 20
+Flash Old Form Data to the Session:
+- use $default = '' in function param instead of returning hardcoded ?? '' for customization

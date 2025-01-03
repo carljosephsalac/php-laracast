@@ -1,6 +1,7 @@
 <?php
 
 use Core\Response;
+use Core\Session;
 
 function dd($value) {
     echo'<pre>';
@@ -38,4 +39,8 @@ function view($path, $attributes) {
 function redirect($path) {
     header("location: {$path}");
     exit();
+}
+
+function old($key, $default = '') {
+    return Session::get('old')[$key] ?? $default;
 }
