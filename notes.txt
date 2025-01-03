@@ -228,3 +228,30 @@ Flash Old Form Data to the Session:
 
 Automatically Redirect Back Upon Failed Validations:
 - $_SERVER['HTTP_REFERER']; previous url
+
+Composer and Free Autoloading:
+- package is a code or collection of file that are available to anyone
+- dependency manager offers a way to install package
+- composer is a dependency manager that offers a way to install php package
+- composer init: this command will guide you through creating your composer.json config
+- composer install: install composer dependency found in "require": in composer.json and also install vendor folder and composer.lock if you don't already have them
+- PSR-4:
+  -> is a widely adopted autoloader standard for PHP that defines how namespaces in PHP code should map to file paths
+  -> provides a clean, standardized, and efficient way to autoload classes in PHP projects, simplifying dependency management and improving code organization
+- whenever you update the autoload configuration run composer dump-autoload then that will repopulate the autoload files
+- error: A non-empty PSR-4 prefix must end with a namespace separator
+  -> just add back slash to psr-4 config and run composer dump-autoload again
+  "autoload": {
+    "psr-4": {
+      "Core\\": "Core/"
+    }
+  }
+  -> check vendor/coomposer/autoload_psr4.php if it is being updated
+  -> then require BASE_PATH . 'vendor/autoload.php'; in you index.php
+- composer.json
+  -> Specifies desired dependencies
+  -> Defines what your project requires
+- composer.lock
+  -> Locks exact versions of dependencies
+  -> Records what your project actually installed
+- Both files should be committed to version control to ensure consistency and proper collaboration.

@@ -3,20 +3,21 @@
 use Core\Session;
 use Core\ValidationException;
 
+const BASE_PATH = __DIR__ . '/../';
+require BASE_PATH . 'vendor/autoload.php';
+require BASE_PATH . 'Core/functions.php';
+
 session_start();
 
 $_SESSION['name'] = 'Carl';
 $_SESSION['age'] = 23;
 
-const BASE_PATH = __DIR__ . '/../';
-
-require BASE_PATH . 'Core/functions.php';
-
-spl_autoload_register(function($class) {
-    // convert $class from Core\Database to Core/Database
-    $class = str_replace('\\', DIRECTORY_SEPARATOR, $class);
-    require base_path("$class.php");
-});
+# custom autoloader
+// spl_autoload_register(function($class) {
+//     // convert $class from Core\Database to Core/Database
+//     $class = str_replace('\\', DIRECTORY_SEPARATOR, $class);
+//     require base_path("$class.php");
+// });
 
 $router = new Core\Router();
 

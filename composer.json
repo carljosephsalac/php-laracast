@@ -1,0 +1,16 @@
+{
+  "name": "salac/php-laracast",
+  "authors": [
+    {
+      "name": "Carl Joseph Salac",
+      "email": "salaccarljoseph@gmail.com"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "Core\\": "Core/",
+      "Http\\": "Http/"
+    }
+  }
+}
